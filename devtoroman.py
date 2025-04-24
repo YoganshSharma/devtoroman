@@ -261,7 +261,6 @@ consonants = {
 'ष':'sh', 
 'स':'s', 
 'ह':'h'}
-#!/usr/bin/env python3
 
 def main():
     parser = argparse.ArgumentParser(
@@ -273,7 +272,7 @@ def main():
     )
     parser.add_argument(
         '-o', '--output',
-        help="Output file path. Defaults to infile+'OUTPUT' or stdout if piped."
+        help="Output file path. Defaults to infile+'.out' or stdout if piped."
     )
     args = parser.parse_args()
 
@@ -289,7 +288,6 @@ def main():
             parser.error('No input file provided and no data piped via stdin.')
         content = sys.stdin.read()
 
-    # Transliterate
     result = transliterate(content, vowels, consonants).strip()
 
     # Write output
@@ -304,7 +302,6 @@ def main():
             f.write(result)
         print(f"DONE! Open '{outpath}'")
     else:
-        # Print to stdout
         print(result)
 
 if __name__ == '__main__':
