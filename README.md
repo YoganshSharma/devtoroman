@@ -4,11 +4,11 @@ This project is a fork of [ritwikmishra/devanagari-to-roman-script-transliterati
 
 ## Improved Features
 
-- **Enhanced Command-Line Interface (CLI)**: The tool now offers a more user-friendly CLI with better error handling and support for various input methods.
+- **Enhanced Command-Line Interface (CLI)**
 
-- **Pipe Support**: You can now pipe text into the tool, allowing for more flexible usage in scripts and command-line workflows.
+- **Pipe Support**
 
-- **Nix Flakes Integration**: The project utilizes Nix Flakes, providing a reproducible and declarative environment for development and deployment. This ensures consistent builds across different systems.
+- **Nix Flakes Integration**
 
 ## Installation
 
